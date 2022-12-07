@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrincipalActivity">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_proveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="proveedor"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_Telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Telefono"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_Municipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Municipio"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="88dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnConsultar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Consultar" />
+
+
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borrar" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cerrar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
